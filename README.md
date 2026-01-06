@@ -7,8 +7,9 @@
 ```javascript
 let last = performance.now(),
   frames = 0;
-function testFPS() {
+function testFPS(tt) {
   frames++;
+  // console.log(tt);
   let now = performance.now();
   if (now - last >= 1000) {
     console.log("FPS:", frames);
